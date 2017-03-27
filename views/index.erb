@@ -18,13 +18,10 @@
 
 <div class="results_display">
   <p> The following triangle:</p>
-  <p>Side 1: <%= @side1  %></p>
-  <p>Side 2: <%= @side2  %></p>
-  <p>Side 3: <%= @side3  %></p>
+  <p>Side 1 is <%= @side1  %> cm</p>
+  <p>Side 2 is <%= @side2  %> cm</p>
+  <p>Side 3 is <%= @side3  %> cm</p>
 
-<% if @result %>
-  <p> This is not a triangle! </p>
-<% else %>
-  <p> This is a triangle! </p>
-<% end %>
+<p>Test: <%= @what_triangle %></p>
+
 </div>

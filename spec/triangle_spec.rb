@@ -2,6 +2,13 @@ require ('rspec')
 require ('triangle')
 
 describe(Triangle) do
+  describe("#type_triangle") do
+    it("returns false when all sides of the triangle are not equal") do
+      test_triangle = Triangle.new(6, 6, 8)
+      expect(test_triangle.type_triangle()).to(eq(false))
+    end
+  end
+
   describe("#equilateral?") do
     it("returns false when all sides of the triangle are not equal") do
       test_triangle = Triangle.new(6, 6, 8)
