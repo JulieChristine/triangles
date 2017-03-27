@@ -21,4 +21,10 @@ class Triangle
   define_method(:scalene?) do
     @side1.!=(@side2) && @side2.!=(@side3)
   end
+
+  define_method(:not_triangle?) do
+    @side1.+(@side2) <= @side3 ||
+    @side2.+(@side3) <= @side1 ||
+    @side3.+(@side1) <= @side2
+  end
 end
