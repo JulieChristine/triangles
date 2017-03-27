@@ -1,0 +1,30 @@
+<h1>Determine the nature of your triangle</h1>
+
+<form action="/triangle_type">
+  <div class="form-group">
+    <label for="side1">Enter the value of side 1:</label>
+    <input id="side1" name="side1" class="form-control" type="text">
+  </div>
+  <div class="form-group">
+    <label for="side2">Enter the value of side 2:</label>
+    <input id="side2" name="side2" class="form-control" type="text">
+  </div>
+  <div class="form-group">
+    <label for="side3">Enter the value of side 3:</label>
+    <input id="side3" name="side3" class="form-control" type="text">
+  </div>
+  <button type="submit" class"btn">Submit</button>
+</form>
+
+<div class="results_display">
+  <p> The following triangle:</p>
+  <p>Side 1: <%= @side1  %></p>
+  <p>Side 2: <%= @side2  %></p>
+  <p>Side 3: <%= @side3  %></p>
+
+<% if @result %>
+  <p> This is not a triangle! </p>
+<% else %>
+  <p> This is a triangle! </p>
+<% end %>
+</div>

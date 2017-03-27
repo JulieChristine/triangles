@@ -7,6 +7,18 @@ class Triangle
     @side3 = side3
   end
 
+  define_method(:side1) do
+    @side1
+  end
+
+  define_method(:side2) do
+    @side2
+  end
+
+  define_method(:side3) do
+    @side3
+  end
+
   define_method(:equilateral?) do
     @side1.eql?(@side2)
     @side2.eql?(@side3)
